@@ -1,8 +1,16 @@
 # Goal: Function that takes a folder path and renames all files sequentailly.
-# Step 1: Accept a folder path and print it.
 
 from pathlib import Path
 
-def bulk_rename(folder_path: Path) -> None:
-    """Placeholder: print the given folder path. """
-    print(f"Recevied folder: {folder_path}")
+def bulk_rename(folder_path: str) -> None:
+    # Given a folder, list all files (not directories) inside it, print each file name found
+    
+    folder = Path(folder_path)
+    
+    print(f"Looking in folder: {folder}")
+    
+    # Collect all files in the folder (ignore sub-folders)
+    for item in folder.iterdir():
+        if item.is_file():
+            print(f"Found file: {item.name}")
+            
