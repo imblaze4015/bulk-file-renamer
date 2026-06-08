@@ -12,4 +12,7 @@ A Python tool to rename all files in a folder sequentailly.
     python3 -m venv .venv
     source .venv/bin/activate # Linux/macOS
     .venv\Scripts\activate #Windows
-    
+
+3. **Install the project and test dependencies:**
+    ``bash
+    pip install -e ".[test]"
