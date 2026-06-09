@@ -9,5 +9,11 @@ if __name__ == "__main__":
         exit(1)
 
     folder = sys.argv[1]
+
+    # Check if the user added the --execute flag
+    do_dry_run = True
+    if "--execute" in sys.argv:
+        do_dry_run = False
+
     print(f"Running renamer on: {folder}")
-    bulk_rename(folder, dry_run=True)
+    bulk_rename(folder, dry_run=do_dry_run)
