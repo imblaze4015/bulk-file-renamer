@@ -6,7 +6,7 @@ A Python tool to rename all files in a folder sequentially.
 
 1. **Clone the repository:**  
    ```bash
-   git clone https://github.com/your-imblaze4015/bulk-file-renamer.git
+   git clone git clone https://github.com/imblaze4015/bulk-file-renamer.git
    ```
 
 2. **Create and activate a virtual environment:**
