@@ -32,14 +32,21 @@ A Python tool to rename all files in a folder sequentially.
 
 ## Usage
 
-In a Python script or interactive session:
+### Command line (recommended)
+
+```bash
+# Safe dry run — prints what would happen without renaming
+python -m bulk_file_renamer path/to/your/folder
+
+# Real rename — actually renames files
+python -m bulk_file_renamer path/to/your/folder --execute
+```
+
+### From Python code
 
 ```python
 from bulk_file_renamer.renamer import bulk_rename
 
-# Dry run (safe) - prints planned rename without changing files
-bulk_rename("path/to/your/folder", dry_run=True)
-
-# Real run - actually rename files
-bulk_rename("path/to/your/folder", dry_run=False)
+bulk_rename("path/to/your/folder", dry_run=True)   # safe preview
+bulk_rename("path/to/your/folder", dry_run=False)  # real renamea
 ```
