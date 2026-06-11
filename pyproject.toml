@@ -5,9 +5,9 @@ build-backend = "hatchling.build"
 [project]
 name = "bulk-file-renamer"
 version = "0.1.0"
+description = "Rename all files in a folder sequentially (e.g., file_1.txt, file_2.jpg)."
+authors = [{ name = "Abdul Muhaymen Ali", email = "abdulmuhaymenali@gmail.com" }]
+requires-python = ">=3.8"
 
 [project.optional-dependencies]
 test = ["pytest"]
-
-[tool.setuptools.packages.find]
-where = ["src"]

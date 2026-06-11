@@ -2,6 +2,14 @@
 
 A Python tool to rename all files in a folder sequentially.
 
+## Features
+
+- Renames all files in a folder to a sequential pattern (`file_1.ext`, `file_2.ext`, ...)
+- Preserves original file extensions
+- Sorts files alphabetically before renaming for predictable order
+- Safe dry-run mode (see planned changes without touching files)
+- Command-line interface with `--execute` flag
+
 ## Installation
 
 1. **Clone the repository:**  
